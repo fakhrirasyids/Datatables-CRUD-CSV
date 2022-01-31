@@ -72,7 +72,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form method="post" action="tambahData.php" class="needs-validation" novalidate>
+              <form method="post" action="php/tambahData.php" class="needs-validation" novalidate>
                 <table align="center" id="table-form">
                   <tr>
                     <td width="150"><label for="nama">Nama</label></td>
@@ -149,7 +149,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form method='post' action='hapusData.php' class="needs-validation" novalidate>
+              <form method='post' action='php/hapusData.php' class="needs-validation" novalidate>
                 <p>
                   <h6 style="text-align: center;">Apakah anda yakin ingin<br><b>Mereset semua data yang ada?</b></h6>
                 </p>

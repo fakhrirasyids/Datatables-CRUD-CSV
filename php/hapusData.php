@@ -1,6 +1,6 @@
 <?php
 $cnt = 0;
-if (($fh = fopen("databuku/data.csv", "r")) !== FALSE) {
+if (($fh = fopen("../databuku/data.csv", "r")) !== FALSE) {
    while (($csvadata = fgetcsv($fh, 1024, ",")) !== FALSE) {
       $data[$cnt++] = $csvadata;
    }
@@ -13,12 +13,12 @@ $i = 0;
    }
 }
 
-$fp = fopen('databuku/data.csv', 'w');
+$fp = fopen('../databuku/data.csv', 'w');
 
 foreach($data as $fields) {
    fputcsv($fp, $fields);
 }
 fclose($fp); 
 
-echo "<meta http-equiv=refresh content=0.1;URL='index.php'>";
+echo "<meta http-equiv=refresh content=0.1;URL='../index.php'>";
 ?>

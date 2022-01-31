@@ -25,7 +25,7 @@ if(isset($_POST["submit"])) {
         $tanggal = clean_text($_POST["tanggal"]);
     }
 
-    $file_open = fopen("databuku/data.csv", "a");
+    $file_open = fopen("../databuku/data.csv", "a");
     $form_data = array(
         'nama'  => $nama,
         'kategori'  => $kategori,
@@ -41,5 +41,5 @@ if(isset($_POST["submit"])) {
 }
 
 
-echo "<meta http-equiv=refresh content=0.1;URL='index.php'>";
+echo "<meta http-equiv=refresh content=0.1;URL='../index.php'>";
 ?>
